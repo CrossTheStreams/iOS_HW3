@@ -10,7 +10,17 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentTemperatureLabel;
 @property (strong, nonatomic) NSDictionary *forecastDictionary;
+
+@property (weak, nonatomic) IBOutlet UILabel *firstHourLabel;
+@property (weak, nonatomic) IBOutlet UILabel *secondHourLabel;
+@property (weak, nonatomic) IBOutlet UILabel *thirdHourLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *firstTemperature;
+@property (weak, nonatomic) IBOutlet UILabel *secondTemperature;
+@property (weak, nonatomic) IBOutlet UILabel *thirdTemperature;
 
 @end
 
