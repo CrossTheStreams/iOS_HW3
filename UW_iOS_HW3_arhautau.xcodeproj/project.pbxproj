@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495499E01AF086980047E192 /* WeatherData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 495499DF1AF086980047E192 /* WeatherData.plist */; };
 		49B6BBED1AEF5D3800E0E4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B6BBEC1AEF5D3800E0E4F5 /* main.m */; };
 		49B6BBF01AEF5D3800E0E4F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B6BBEF1AEF5D3800E0E4F5 /* AppDelegate.m */; };
 		49B6BBF31AEF5D3800E0E4F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B6BBF21AEF5D3800E0E4F5 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495499DF1AF086980047E192 /* WeatherData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WeatherData.plist; sourceTree = "<group>"; };
 		49B6BBE71AEF5D3800E0E4F5 /* UW_iOS_HW3_arhautau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UW_iOS_HW3_arhautau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B6BBEB1AEF5D3800E0E4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B6BBEC1AEF5D3800E0E4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		49B6BC041AEF5D3800E0E4F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				495499DF1AF086980047E192 /* WeatherData.plist */,
 				49B6BC051AEF5D3800E0E4F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B6BBF61AEF5D3800E0E4F5 /* Main.storyboard in Resources */,
+				495499E01AF086980047E192 /* WeatherData.plist in Resources */,
 				49B6BBFB1AEF5D3800E0E4F5 /* LaunchScreen.xib in Resources */,
 				49B6BBF81AEF5D3800E0E4F5 /* Images.xcassets in Resources */,
 			);
@@ -414,6 +418,7 @@
 				49B6BC0C1AEF5D3800E0E4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49B6BC0D1AEF5D3800E0E4F5 /* Build configuration list for PBXNativeTarget "UW_iOS_HW3_arhautauTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				49B6BC0F1AEF5D3800E0E4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
