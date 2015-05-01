@@ -22,15 +22,36 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondTemperature;
 @property (weak, nonatomic) IBOutlet UILabel *thirdTemperature;
 
+@property (weak, nonatomic) IBOutlet UILabel *sunriseLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sunsetLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *sunriseTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sunsetTimeLabel;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
 
-    [self forecast];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[self cityLabel] setText: [self city]];
+    
+    [[self currentTemperatureLabel] setText: [self temperatureForHour:9]];
+
+    [[self firstHourLabel] setText: @"8 AM"];
+    [[self secondHourLabel] setText: @"9 AM"];
+    [[self thirdHourLabel] setText: @"10 AM"];
+    
+    [[self firstTemperature] setText: [self temperatureForHour:10]];
+    [[self secondTemperature] setText: [self temperatureForHour:11]];
+    [[self thirdTemperature] setText: [self temperatureForHour:12]];
+    
+    [[self sunriseTimeLabel] setText: [self sunriseTime]];
+    [[self sunsetTimeLabel] setText: [self sunsetTime]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,11 +77,19 @@
     return [[self forecast] objectForKey: @"HourlyForecast"];
 }
 
--(NSString*) sunrise {
+-(NSString*) temperatureForHour:(NSUInteger) hourIndex {
+    NSArray *forecast = [self hourlyForecast];
+    NSNumber *temperature = [forecast objectAtIndex: hourIndex];
+    NSString *stringTemperature = [NSString stringWithFormat:@"%@", temperature];
+    
+    return stringTemperature;
+}
+
+-(NSString*) sunriseTime {
     return [[self forecast] objectForKey: @"Sunrise"];
 }
 
--(NSString*) sunset {
+-(NSString*) sunsetTime {
     return [[self forecast] objectForKey: @"Sunset"];
 }
 
