@@ -41,7 +41,6 @@
 -(NSDictionary*) forecast {
     if (![self forecastDictionary]) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"WeatherData" ofType:@"plist"];
-        NSFileManager *fileManager = [NSFileManager defaultManager];
         NSArray *plistArray = [[NSArray alloc] initWithContentsOfFile:path];
         [self setForecastDictionary: [plistArray firstObject]];
         NSLog(@"%@", [self forecastDictionary]);
